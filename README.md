@@ -1,4 +1,3 @@
-
 # etherpad-lite for heroku
 
 This is a wrapper of etherpad-lite for Heroku, incorporating the official release from upstream as a submodule. (This will hopefully make it easier to keep current.)
@@ -35,7 +34,7 @@ heroku config:add ETHERPAD_ALLOW_ROOT=1
 ```
 
 To enable Etherpad's authentication features, set "requireSession" and "editOnly"
-to "true" in settings.conf. Also set your own API key : 
+to "true" in settings.conf. Also set your own API key :
 
 ```bash
 heroku config:add ETHERPAD_API_KEY=somereallylongrandomstring
