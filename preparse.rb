@@ -21,6 +21,8 @@ settings = {
   title: '',
 }.merge(JSON.parse(File.read(ENV.fetch('ETHERPAD_SETTINGS'))))
 
+puts settings
+
 # Write the settings hash out as JSON.
 File.open('./etherpad-lite/settings.json', 'w') { |f| f.write(settings.to_json) }
 
@@ -29,7 +31,7 @@ File.open('./etherpad-lite/settings.json', 'w') { |f| f.write(settings.to_json) 
 # For more info, read http://etherpad.org/doc/v1.5.7/#index_authentication and source code node/handler/APIHandler.js
 etherpad_api_key = ENV['ETHERPAD_API_KEY'];
 unless etherpad_api_key.nil?
-  File.open('./etherpad-lite/APIKEY.txt', 'w') { |f| f.write( etherpad_api_key ) } 
+  File.open('./etherpad-lite/APIKEY.txt', 'w') { |f| f.write( etherpad_api_key ) }
 end
 
 `./installPackages.sh`
