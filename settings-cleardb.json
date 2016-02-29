@@ -6,6 +6,9 @@
 {
   "ep_markdown_default": true,
 
+
+  "ep_codepad": {"theme": "Cobalt"},
+  
   // Name your instance!
   "title": "Etherpad",
 
