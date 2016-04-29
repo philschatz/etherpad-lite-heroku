@@ -52,3 +52,11 @@ heroku config:add ETHERPAD_API_KEY=somereallylongrandomstring
 I had to rewrite the launch script on my own, but once I started to understand it, I incorporated lines from [a previous repository](https://github.com/ohwillie/etherpad-lite-heroku).
 
 I got the idea to deconfigure IP/port binding from [the cloudfoundry etherapp repo](https://github.com/cloudfoundry-community/etherpad-lite-cf), which was giving me headache for a little while.
+
+
+# Commands
+
+```
+heroku logs -t
+git push heroku master
+```
