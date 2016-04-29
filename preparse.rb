@@ -4,7 +4,8 @@ require 'json'
 require 'uri'
 
 # Create settings hash add merge in the user-provided JSON.
-database_uri = URI.parse(ENV['DATABASE_URL'])
+# database_uri = URI.parse(ENV['DATABASE_URL'])
+database_uri = URI.parse('sqlite://memdb1?mode=memory&cache=shared') # Use in-memory sqlite3 DB since we want the data to disappear anyway
 settings = {
   dbType: database_uri.scheme,
   dbSettings: {
