@@ -9,6 +9,7 @@ echo "To install ep-plugins, add them to package.json"
   mkdir -p node_modules
   cd node_modules
   cp -R ../../node_modules/ep_* .
+  cp -R ../../node_modules/sqlite3 .
 ) || {
   exit 1
 }
