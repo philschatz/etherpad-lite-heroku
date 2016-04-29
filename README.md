@@ -60,4 +60,3 @@ I got the idea to deconfigure IP/port binding from [the cloudfoundry etherapp re
 heroku logs -t
 git push heroku master
 ```
-.
