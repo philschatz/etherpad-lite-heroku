@@ -13,7 +13,7 @@ settings = {
     port: database_uri.port,
     password: database_uri.password,
     database: database_uri.path.sub(%r{^/}, ''),
-    dbname: database_uri.path.sub(%r{^/}, '')
+    dbname: 'memdb1?mode=memory&cache=shared'
   },
   defaultPadText: '',
   editOnly: true,
